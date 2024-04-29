@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto-sliding Testimonials</title>
+<style>
+  /* Styles for the testimonials container */
+  .testimonials-container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Styles for individual testimonial items */
+  .testimonial {
+    display: none;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Styles for the active testimonial */
+  .active {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="testimonials-container">
+  <div class="testimonial active">
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales justo vel risus sollicitudin, ut vestibulum nunc tincidunt."</p>
+    <p>- John Doe, CEO</p>
+  </div>
+  <div class="testimonial">
+    <p>"Suspendisse potenti. Phasellus eu eros vitae libero euismod tempor vel sit amet tortor. Ut semper elit nec aliquam vestibulum."</p>
+    <p>- Jane Smith, CTO</p>
+  </div>
+  <div class="testimonial">
+    <p>"Vivamus et turpis vitae elit consectetur maximus. Nulla ac felis in libero accumsan ullamcorper sed vel libero."</p>
+    <p>- David Johnson, COO</p>
+  </div>
+</div>
+
+<script>
+  // JavaScript code for auto-sliding testimonials
+  const testimonials = document.querySelectorAll('.testimonial');
+  let index = 0;
+
+  function showTestimonial() {
+    testimonials.forEach(testimonial => {
+      testimonial.classList.remove('active');
+    });
+    testimonials[index].classList.add('active');
+    index = (index + 1) % testimonials.length;
+  }
+
+  setInterval(showTestimonial, 5000); // Change testimonial every 5 seconds
+</script>
+
+</body>
+</html>
