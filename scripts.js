@@ -1,4 +1,22 @@
-document.addEventListener("DOMContentLoaded", function() {
+var menuIcon = document.querySelector('.nav-open-btn');
+var closeIcon = document.querySelector('.nav-close-btn');
+var navbarLinks = document.getElementById('navbar');
+
+// Openning nav menu
+menuIcon.addEventListener('click', function(){
+  navbarLinks.classList.add('active');
+  menuIcon.classList.add('hide');
+  closeIcon.classList.add('open');
+});
+
+// Clossing nav menu
+closeIcon.addEventListener('click', function(){
+  navbarLinks.classList.remove('active');
+  menuIcon.classList.remove('hide');
+  closeIcon.classList.remove('open');
+});
+
+
   const texts = [
     {title: "Trusted & Secure Investment Company", text: "Are you ready for a great change!!! Online investment is now the talk of town, Invest on Dan's crypto today and experience a change that will shed smiles on you and your generations to come."},
     {title: "Discover", text: "Praesent varius convallis risus, id eleifend dolor commodo id. Nulla malesuada mauris a nulla tempus, non convallis lectus interdum."},
@@ -18,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Call changeContent function once when the page loads
   changeContent();
+
+  document.getElementById("bannerTitle").classList.add("slide-up");
+  document.getElementById("bannerText").classList.add("slide-right");
 
   // Function to change text and background image on interval
   function changeContentOnInterval() {
@@ -48,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
     changeContent();
   });
-});
 
 // Users Statistics
 window.addEventListener('scroll', () => {
