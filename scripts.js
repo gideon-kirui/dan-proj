@@ -1,3 +1,4 @@
+// Navbar operations
 var menuIcon = document.querySelector('.nav-open-btn');
 var closeIcon = document.querySelector('.nav-close-btn');
 var navbarLinks = document.getElementById('navbar');
