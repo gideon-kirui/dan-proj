@@ -25,44 +25,53 @@
         </a>
       </div>
       <ul class="navbar-list">
-        <li>
-          <a href="#" class="navbar-link">Home</a>
+        <li class="lnk-cont">
+          <a href="#Home" class="navbar-link">Home</a>
         </li>
-        <li>
-          <a href="#" class="navbar-link">About</a>
+        <li class="lnk-cont">
+          <a href="#aboutus" class="navbar-link">About</a>
         </li>
-        <li>
-          <a href="#" class="navbar-link">How it Works</a>
+        <li class="lnk-cont"> 
+          <a href="#getstarted" class="navbar-link">Getting Started</a>
         </li>
-        <li>
-          <a href="#" class="navbar-link">Packages</a>
+        <li class="lnk-cont">
+          <a href="#invset-pk" class="navbar-link">Packages</a>
         </li>
-        <li>
-          <a href="#" class="navbar-link">Updates</a>
+        <li class="lnk-cont">
+          <a href="#stats" class="navbar-link">Updates</a>
         </li>
-        <li>
+        <li class="lnk-cont">
           <a href="#" class="navbar-link">Help</a>
         </li>
       </ul>
     </nav>
-    <div class="btn-group">
-      <a href="login_signup.html" class=" ghost-btn">Sign In</a>
-      <a href="login_signup.html" class=" btn-G-st">Get Started</a>
+    <div class="nav-rght-lnk">
+      <!-- <div class="btn-group">
+        <a href="login_signup.html" class=" ghost-btn">Sign In</a>
+        <a href="login_signup.html" class=" btn-G-st">Get Started</a>
+      </div>  -->
+      <button class="header-bottom-actions-btn profile" aria-label="Profile">
+        <img src="./images/gidi.jpg" alt="">
+        <ul class="profile-links">
+          <li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+          <li><a href="#"><i class='bx bxs-cog' ></i>Account</a></li>
+          <li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+        </ul>
+      </button>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+        <i class="fa-solid fa-times"></i>
+      </button>
     </div>
-    <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-      <i class="fa-solid fa-bars"></i>
-    </button>
-    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-      <i class="fa-solid fa-times"></i>
-    </button>
-    <div class="overlay" data-overlay data-nav-toggler></div>
   </div>
 
   <!---
     #Banner
   -->
 
-  <div class="banner">
+  <div class="banner" id="Home">
     <div class="text-container">
       <div class="txt-dt">
         <h1 id="bannerTitle" class="slide-in"> Trusted & Secure Investment Company </h1>
@@ -83,55 +92,56 @@
     #About Us
   -->
 
-  <div class="abt-container" id="aboutus">
-    <div class="stats-content">
-      <h2 class="h2 section-title">Our Best Users Are all over the Worldwide Coverage</h2>
-      <p class="section-text">
-        You might wonder why a designer would choose to use Morem text Paragraphs Lorem Ipsum available but the
-        majority
-      </p>
-      <p class="section-text">
-        embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
-        predefined
-        chunks as necessary, making this the first true generator on the Internet.
-      </p>
-      <ul class="stats-list">
-        <li>
-          <div class="stats-card bg-gray">
-            <h3 class="h3 card-title" data-target="5000">0</h3>
-            <p class="card-text">
-              Pepole Have Joined
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="stats-card bg-gray">
-            <h3 class="h3 card-title" data-target="2500">0</h3>
-            <p class="card-text">
-              people have invested
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="stats-card bg-gray">
-            <h3 class="h3 card-title" data-target="1000">0</h3>
-            <p class="card-text">
-              people have earned
-            </p>
-          </div>
-        </li>
-      </ul>
+  <div class="about-us">
+    <h2 class="hw-t-g-std-h">About Us</h2>
+    <div class="abt-container" id="aboutus">
+      <div class="stats-content">
+        <h2 class="h2 section-title">Our Best Users Are all over the Worldwide Coverage</h2>
+        <p class="section-text ">
+          You might wonder why a designer would choose to use Morem text Paragraphs Lorem Ipsum available but the
+          majority
+          embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat
+          predefined
+          chunks as necessary, making this the first true generator on the Internet.
+        </p>
+        <ul class="stats-list">
+          <li>
+            <div class="stats-card bg-gray">
+              <h3 class="h3 card-title" data-target="5000">0</h3>
+              <p class="card-text">
+                Pepole Have Joined
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="stats-card bg-gray">
+              <h3 class="h3 card-title" data-target="2500">0</h3>
+              <p class="card-text">
+                people have invested
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="stats-card bg-gray">
+              <h3 class="h3 card-title" data-target="1000">0</h3>
+              <p class="card-text">
+                people have earned
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <figure class="stats-banner">
+        <img src="./images/stats-banner.png" alt="map" class="w-100">
+      </figure>
     </div>
-    <figure class="stats-banner">
-      <img src="./images/stats-banner.png" alt="map" class="w-100">
-    </figure>
   </div>
 
    <!---
     #how to get started
   -->
 
-  <div class="h-wt-gt-st">
+  <div class="h-wt-gt-st" id="getstarted">
     <h2 class="hw-t-g-std-h">How to get started With Dan-vesto</h2>
     <div class="hw-t-g-std">
       <div class="gt-st-cnt">
@@ -169,7 +179,7 @@
     #Investments Packages
   -->
   
-  <div class="packages-cont">
+  <div class="packages-cont" id="invset-pk">
     <h2 class="pckg-ttl1">Begin Your investment Journey</h2>
     <p class="pckg-ttl2">Choose your prefered investment packed bellow and test the feeling of 
       true investment
@@ -179,13 +189,13 @@
         <div class="packg-tb">
           <h2 class="packg-ttl bronz-t">Bronze</h2>
           <p class="time"><span>20%</span> After 24Hrs</p>
-          <h4 class="h4b">Ksh.500 - Ksh.10,000</h4>
+          <h4 class="h4b"><span class="inv-from">From</span>Ksh.500 - Ksh.10,000 <span class="inv-to">To</span></h4>
           <div class="features">
             <ul>
-              <li><i class="fa-solid fa-square-check"></i><p>Secure</p></li>
-              <li><i class="fa-solid fa-square-check"></i><p>Regulated</p></li>
-              <li><i class="fa-solid fa-square-check"></i><p>24/7 Support</p></li>
-              <li><i class="fa-solid fa-square-check"></i><p>Instant Withdrawal</p></li>
+              <li><i class="fa-solid fa-square-check bronze-1"></i><p>Secure</p></li>
+              <li><i class="fa-solid fa-square-check bronze-1"></i><p>Regulated</p></li>
+              <li><i class="fa-solid fa-square-check bronze-1"></i><p>24/7 Support</p></li>
+              <li><i class="fa-solid fa-square-check bronze-1"></i><p>Instant Withdrawal</p></li>
             </ul>
           </div>
           <div class="inv-btn">
@@ -197,13 +207,13 @@
         <div class="packg-tb">
           <h2 class="packg-ttl silver-t">Silver</h2>
           <p class="time"><span>30%</span> After 24Hrs</p>
-          <h4 class="h4s">Ksh.10,001 - Ksh.100,000</h4>
+          <h4 class="h4s"><span class="inv-from">From</span>Ksh.10,001 - Ksh.100,000<span class="inv-to">To</span></h4>
           <div class="features">
             <ul>
-              <li><i class="fa-solid fa-square-check"></i><p>Secure</p></li>
-              <li><i class="fa-solid fa-square-check"></i><p>Regulated</p></li>
-              <li><i class="fa-solid fa-square-check"></i><p>24/7 Support</p></li>
-              <li><i class="fa-solid fa-square-check"></i><p>Instant Withdrawal</p></li>
+              <li><i class="fa-solid fa-square-check silver-1"></i><p>Secure</p></li>
+              <li><i class="fa-solid fa-square-check silver-1"></i><p>Regulated</p></li>
+              <li><i class="fa-solid fa-square-check silver-1"></i><p>24/7 Support</p></li>
+              <li><i class="fa-solid fa-square-check silver-1"></i><p>Instant Withdrawal</p></li>
             </ul>
           </div>
           <div class="inv-btn">
@@ -215,13 +225,13 @@
         <div class="packg-tb">
           <h2 class="packg-ttl gold-t">Gold</h2>
           <p class="time"><span>50%</span> After 24Hrs</p>
-          <h4 class="h4g">Ksh.100,001 - Ksh.1,000,000</h4>
+          <h4 class="h4g"><span class="inv-from">From</span>Ksh.1100,001 - Ksh.10,000,000<span class="inv-to">To</span></h4>
           <div class="features">
             <ul>
-              <li><i class="fa-solid fa-square-check"></i><p>Secure</p></li>
-              <li><i class="fa-solid fa-square-check"></i><p>Regulated</p></li>
-              <li><i class="fa-solid fa-square-check"></i><p>24/7 Support</p></li>
-              <li><i class="fa-solid fa-square-check"></i><p>Instant Withdrawal</p></li>
+              <li><i class="fa-solid fa-square-check gold-1"></i><p>Secure</p></li>
+              <li><i class="fa-solid fa-square-check gold-1"></i><p>Regulated</p></li>
+              <li><i class="fa-solid fa-square-check gold-1"></i><p>24/7 Support</p></li>
+              <li><i class="fa-solid fa-square-check gold-1"></i><p>Instant Withdrawal</p></li>
             </ul>
           </div>
           <div class="inv-btn">
@@ -239,7 +249,7 @@
     #Statistics
   -->
 
-  <div class="updt-wtd-inv">
+  <div class="updt-wtd-inv" id="stats">
     <div class="w-d-tl">Withdrawals and Investemnts update</div>
     <div class="wdrls-invests-tbl">
       <div class="table-container">
