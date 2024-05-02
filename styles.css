@@ -868,9 +868,6 @@ footer{
 
 .s-l-container{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   height: 100vh;
   background: url(./images/l-s-img.jpg) no-repeat;
@@ -880,7 +877,7 @@ footer{
 }
 .logreg-box{
   position: absolute;
-  top: 3%;
+  top: 2%;
   left: 2%;
   width: 96%;
   height: 86%;
@@ -1026,8 +1023,7 @@ footer{
 .s-l-f-cnt{
   position: absolute;
   width: 100%;
-  height: 4%;
-  bottom: 0;
+  bottom: 1%;
 }
 .s-l-f-cnt .copy-l-s{
   font-size: 12px;
