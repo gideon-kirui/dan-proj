@@ -360,10 +360,10 @@
 }
 .abt-container .stats-content{
   position: absolute;
-  left: 2%;
-  top: 2%;
-  width: 96%;
-  height: 96%;
+  left: 3%;
+  top: 3%;
+  width: 94%;
+  height: 94%;
   margin: auto;
   background-color: rgba(19, 19, 19, 0.397);
 }
