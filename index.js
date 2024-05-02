@@ -1,6 +1,6 @@
 // Sign in and sign up Swaps
 
-const loregBox = document.querySelector('.logreg-box');
+const loregBox = document.querySelector('.s-l-container');
 const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 
