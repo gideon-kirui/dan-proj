@@ -118,3 +118,17 @@ function showTestimonial() {
 }
 
 setInterval(showTestimonial, 5000);
+
+
+// Displaying depo pop
+var clsBtn = document.querySelector('.fa-circle-xmark');
+var opnBtn = document.querySelector('.pn-dfrm');
+var dsplyForm = document.querySelector('.inv-fm');
+
+opnBtn.addEventListener('click', function(){
+  dsplyForm.classList.add('active');
+});
+
+clsBtn.addEventListener('click', function(){
+  dsplyForm.classList.remove('active');
+});

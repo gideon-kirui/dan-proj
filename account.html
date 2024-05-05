@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dan-Vesta</title>
+<link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/a8ba985590.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!---
+    #Navigation Bar
+  -->
+  <div class="nav-container">
+    <a href="#" class="logo">
+    <img src="./images/favicon.svg" alt="dans-crypto home">
+    <h4>Dan-Vesta</h4>
+    </a>
+    <nav class="navbar" id="navbar">
+      <div class="navbar-top">
+        <a href="#" class="logo">
+        <img src="./images/favicon.svg" alt="logo">
+        <p>Dan-Vesta</p>
+        </a>
+      </div>
+      <ul class="navbar-list">
+        <li class="lnk-cont">
+        <a href="#Home" class="navbar-link">Home</a>
+        </li>
+        <li class="lnk-cont">
+        <a href="#aboutus" class="navbar-link">About</a>
+        </li>
+        <li class="lnk-cont"> 
+        <a href="#getstarted" class="navbar-link">Getting Started</a>
+        </li>
+        <li class="lnk-cont">
+        <a href="#invset-pk" class="navbar-link">Packages</a>
+        </li>
+        <li class="lnk-cont">
+        <a href="#stats" class="navbar-link">Updates</a>
+        </li>
+        <li class="lnk-cont">
+        <a href="#" class="navbar-link">Help</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="nav-rght-lnk">
+      <!-- <div class="btn-group">
+          <a href="login_signup.html" class=" ghost-btn">Sign In</a>
+          <a href="login_signup.html" class=" btn-G-st">Get Started</a>
+      </div>  -->
+      <button class="header-bottom-actions-btn profile" aria-label="Profile">
+          <img src="./images/gidi.jpg" alt="">
+          <ul class="profile-links">
+          <li><a href=""><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+          <li><a href="#"><i class='bx bxs-cog' ></i>Account</a></li>
+          <li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+          </ul>
+      </button>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <i class="fa-solid fa-bars"></i>
+      </button>
+      <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <i class="fa-solid fa-times"></i>
+      </button>
+    </div>
+  </div>
+  <!--
+    #POP Ups
+  -->
+  <div class="pop-up-cnt inv-fm">
+    <i class="fa-solid fa-circle-xmark"></i>
+    <div class="dpst-cnt">
+      <form action="" method="post">
+        <h4>Make Your investment</h4>
+        <div class="ptnts">
+          <select name="" id="">
+            <option value="">Choose Package</option>
+            <option value="">Bronze</option>
+            <option value="">Silver</option>
+            <option value="">Gold</option>
+          </select>
+        </div>
+        <div class="ptnts">
+          <select name="" id="">
+            <option value="">Choose Payment Method</option>
+            <option value="">M-Pesa</option>
+          </select>
+        </div>
+        <div class="amnt">
+          <label for="">Enter Amount</label>
+          <input type="text">
+        </div>
+        <div class="btn-dp"><input type="submit" value="Deposite"></div>
+      </form>
+    </div>
+  </div>
+  <div class="account-cont">
+    <div class="crnt-blnc">
+      <img src="./images/favicon.svg" alt="">
+      <h4>Current Balance</h4>
+      <p>Ksh. 0.00</p>
+    </div>
+    <ul class="c-w-d">
+      <li class="cwd-lnks pn-dfrm"><a href="#"><i class="fa-solid fa-money-bill"></i> <p>Deposit</p></a></li>
+      <li class="cwd-lnks"><a href="#"><i class="fa-solid fa-money-bill-transfer"></i> <p>Transfer</p></a></li>
+      <li class="cwd-lnks"><a href="#"><i class="fa-solid fa-credit-card"></i> <p>Withdraw</p></a></li>
+      <li class="cwd-lnks"><a href="#"><i class="fa-solid fa-money-check-dollar"></i> <p>Upgrade</p></a></li>
+      <li class="cwd-lnks"><a href="#"><i class="fa-solid fa-award"></i> <p>Rewards</p></a></li>
+    </ul>
+    <div class="ref-frnd">
+      <h4>Reffer a friend</h4>
+      <div class="ref-lnk">
+        <p class="lnk">Gk-jdjd-ukiduKZY-ref1</p>
+        <div class="r-f-lnk">
+          <a href="#">Copy Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="acnt-info">
+      <h4>Account Info</h4>
+      <div class="nf-cnt">
+        <div class="ccnt-nf-cnt">
+          <div class="nf-crd">
+            <div class="icon"><i class="fa-solid fa-code-compare"></i></div>
+            <h4>Your Competence</h4>
+          </div>
+          <div class="chart-container">
+            <canvas id="earnings-chart"></canvas>
+          </div>
+        </div>
+        <div class="ccnt-nf-cnt">
+          <div class="nf-crd">
+            <div class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <h4>Your Earnings</h4>
+          </div>
+          <div class="chart-container">
+            <canvas id="earnings-chart1"></canvas>
+          </div>
+        </div>
+        <div class="ccnt-nf-cnt">
+          <div class="nf-crd">
+            <div class="icon"><i class="fa-solid fa-money-bill-wave"></i></div>
+            <h4>Your Investments</h4>
+          </div>
+          <div class="chart-container">
+            <canvas id="earnings-chart2"></canvas>
+          </div>
+        </div>
+        <div class="ccnt-nf-cnt">
+          <div class="nf-crd">
+            <div class="icon"><i class="fa-solid fa-group-arrows-rotate"></i></div>
+            <h4>Site Engagement</h4>
+          </div>
+          <div class="chart-container">
+            <canvas id="earnings-chart3"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="updt-wtd-inv tp-e-up" id="stats">
+      <div class="w-d-tl">Top 10 Earners</div>
+      <div class="wdrls-invests-tbl">
+        <div class="table-container">
+          <table class="market-table">
+            <thead class="table-head">
+              <tr class="table-row">
+                <th class="table-heading">Invester</th>
+                <th class="table-heading">T.IV</th>
+                <th class="table-heading">T.IR</th>
+                <th class="table-heading">P.IE</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr class="table-row">
+                <td class="table-data wrapper">
+                  <div class="ppr bronze"><h4>G</h4></div>
+                  <div>
+                    <h3 class="h3 coin-name">user-1</h3>
+                  </div>
+                </td>
+  
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon bronze-1">
+                      <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">1,000,000</h5>
+                      <p>1 day ago</p>
+                    </div>
+                  </td>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon green">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">10,000,000</h5>
+                      <p>1 min ago</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <h5 class="data-i" value="-3.26%">50%</h5>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data wrapper">
+                  <div class="ppr silver"><h4>T</h4></div>
+                  <div>
+                    <h3 class="h3 coin-name">user-2</h3>
+                  </div>
+                </td>
+  
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon silver-1">
+                      <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">1,000,000</h5>
+                      <p>1 day ago</p>
+                    </div>
+                  </td>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon blue">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">10,000,000</h5>
+                      <p>1 min ago</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <h5 class="data-i" value="-3.26%">70%</h5>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data wrapper">
+                  <div class="ppr gold"><h4>k</h4></div>
+                  <div>
+                    <h3 class="h3 coin-name">user-3</h3>
+                  </div>
+                </td>
+  
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon gold-1">
+                      <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">1,000,000</h5>
+                      <p>1 day ago</p>
+                    </div>
+                  </td>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon red">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">10,000,000</h5>
+                      <p>1 min ago</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <h5 class="data-i" value="-3.26%">30%</h5>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data wrapper">
+                  <div class="ppr silver"><h4>M</h4></div>
+                  <div>
+                    <h3 class="h3 coin-name">user-2</h3>
+                  </div>
+                </td>
+  
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon silver-1">
+                      <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">1,000,000</h5>
+                      <p>1 day ago</p>
+                    </div>
+                  </td>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon blue">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">10,000,000</h5>
+                      <p>1 min ago</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <h5 class="data-i" value="-3.26%">70%</h5>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data wrapper">
+                  <div class="ppr bronze"><h4>G</h4></div>
+                  <div>
+                    <h3 class="h3 coin-name">user-1</h3>
+                  </div>
+                </td>
+  
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon bronze-1">
+                      <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">1,000,000</h5>
+                      <p>1 day ago</p>
+                    </div>
+                  </td>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon green">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">10,000,000</h5>
+                      <p>1 min ago</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <h5 class="data-i" value="-3.26%">50%</h5>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data wrapper">
+                  <div class="ppr silver"><h4>T</h4></div>
+                  <div>
+                    <h3 class="h3 coin-name">user-2</h3>
+                  </div>
+                </td>
+  
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon silver-1">
+                      <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">1,000,000</h5>
+                      <p>1 day ago</p>
+                    </div>
+                  </td>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon blue">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">10,000,000</h5>
+                      <p>1 min ago</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <h5 class="data-i" value="-3.26%">70%</h5>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data wrapper">
+                  <div class="ppr gold"><h4>k</h4></div>
+                  <div>
+                    <h3 class="h3 coin-name">user-3</h3>
+                  </div>
+                </td>
+  
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon gold-1">
+                      <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">1,000,000</h5>
+                      <p>1 day ago</p>
+                    </div>
+                  </td>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon red">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">10,000,000</h5>
+                      <p>1 min ago</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <h5 class="data-i" value="-3.26%">30%</h5>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data wrapper">
+                  <div class="ppr silver"><h4>M</h4></div>
+                  <div>
+                    <h3 class="h3 coin-name">user-2</h3>
+                  </div>
+                </td>
+  
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon silver-1">
+                      <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">1,000,000</h5>
+                      <p>1 day ago</p>
+                    </div>
+                  </td>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon blue">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">10,000,000</h5>
+                      <p>1 min ago</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <h5 class="data-i" value="-3.26%">70%</h5>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data wrapper">
+                  <div class="ppr bronze"><h4>G</h4></div>
+                  <div>
+                    <h3 class="h3 coin-name">user-1</h3>
+                  </div>
+                </td>
+  
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon bronze-1">
+                      <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">1,000,000</h5>
+                      <p>1 day ago</p>
+                    </div>
+                  </td>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon green">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">10,000,000</h5>
+                      <p>1 min ago</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <h5 class="data-i" value="-3.26%">50%</h5>
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data wrapper">
+                  <div class="ppr gold"><h4>k</h4></div>
+                  <div>
+                    <h3 class="h3 coin-name">user-3</h3>
+                  </div>
+                </td>
+  
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon gold-1">
+                      <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">1,000,000</h5>
+                      <p>1 day ago</p>
+                    </div>
+                  </td>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <div class="icon red">
+                      <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="data">
+                      <h5 value="39000">10,000,000</h5>
+                      <p>1 min ago</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="table-data">
+                  <div class="wrapper-flex">
+                    <h5 class="data-i" value="-3.26%">30%</h5>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="ft-cnt">
+      <a href="#">help</a>
+      <a href="login_signup.html">Get Started</a>
+      <a href="#">FQAs</a>
+    </div>
+    <hr>
+    <div class="cprt">
+      <p>Copyright&copy;2024</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js1.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
