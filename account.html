@@ -14,20 +14,20 @@
     #Navigation Bar
   -->
   <div class="nav-container">
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
     <img src="./images/favicon.svg" alt="dans-crypto home">
     <h4>Dan-Vesta</h4>
     </a>
     <nav class="navbar" id="navbar">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
         <img src="./images/favicon.svg" alt="logo">
         <p>Dan-Vesta</p>
         </a>
       </div>
       <ul class="navbar-list">
         <li class="lnk-cont">
-        <a href="#Home" class="navbar-link">Home</a>
+        <a href="index.html" class="navbar-link">Home</a>
         </li>
         <li class="lnk-cont">
         <a href="#aboutus" class="navbar-link">About</a>
@@ -54,9 +54,9 @@
       <button class="header-bottom-actions-btn profile" aria-label="Profile">
           <img src="./images/gidi.jpg" alt="">
           <ul class="profile-links">
-          <li><a href=""><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
-          <li><a href="#"><i class='bx bxs-cog' ></i>Account</a></li>
-          <li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+            <li><a href="profile.html"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+            <li><a href="account.html"><i class='bx bxs-cog' ></i>Account</a></li>
+            <li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
           </ul>
       </button>
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -70,7 +70,10 @@
   <!--
     #POP Ups
   -->
-  <div class="pop-up-cnt inv-fm">
+  <!--
+    #Deposit from popup
+  -->
+  <div class="pop-up-cnt inv-fm" id="inv-fm">
     <i class="fa-solid fa-circle-xmark"></i>
     <div class="dpst-cnt">
       <form action="" method="post">
@@ -97,6 +100,121 @@
       </form>
     </div>
   </div>
+  <!--
+    #Widthdrawal popup
+  -->
+  <div class="pop-up-cnt wdthrw-fm" id="wdthrw-fm">
+    <i class="fa-solid fa-circle-xmark"></i>
+    <div class="wtdr-fm-cnt">
+      <form action="" method="post">
+        <h2>Withdraw Earnings</h2>
+        <div class="wtd-r-dt">
+          <h4>Total Investment <span class="ti">Ksh.00.00</span></h4>
+          <h4>Total Earnings: <span class="te">Ksh.00.00</span></h4>
+          <input type="text" name="" id="" placeholder="Enter amount to Widthdraw">
+        </div>
+        <button type="submit" >Widthdraw</button>
+      </form>
+    </div>
+  </div>
+  <!--
+    #Transfer popup
+  -->
+  <div class="pop-up-cnt transfer-fm" id="transfer-fm">
+    <i class="fa-solid fa-circle-xmark"></i>
+    <div class="wtdr-fm-cnt trns-cnt">
+      <form action="" method="post">
+        <h2>Invest with points</h2>
+        <div class="wtd-r-dt">
+          <h4 class="h4-trnsf">Total points <span>00</span></h4>
+          <p class="p-cmnt">You are about to transfer your points to Investment! If you are sure about it
+            then the amount of points you've specified will be transfered to investment.
+          </p>
+          <input type="text" name="" id="" placeholder="Enter amount of points">
+        </div>
+        <button type="submit" >Transfer</button>
+      </form>
+    </div>
+  </div>
+  <!--
+    #Upgrade popup
+  -->
+  <div class="pop-up-cnt upgrade-fm" id="upgrade-fm">
+    <i class="fa-solid fa-circle-xmark"></i>
+    <div class="dpst-cnt upgrd">
+      <form action="" method="post">
+        <h4>Upgarde investment</h4>
+        <p class="p-cmnt">Your current investment package is <span class="bronze">Bronze</span></p>
+        <div class="ptnts">
+          <select name="" id="">
+            <option value="">Choose another package</option>
+            <option value="">Bronze</option>
+            <option value="">Silver</option>
+            <option value="">Gold</option>
+          </select>
+        </div>
+        <div class="ptnts">
+          <select name="" id="">
+            <option value="">Choose Payment Method</option>
+            <option value="">M-Pesa</option>
+          </select>
+        </div>
+        <div class="amnt">
+          <label for="">Enter Amount</label>
+          <input type="text">
+        </div>
+        <div class="btn-dp"><input type="submit" value="Upgrade"></div>
+      </form>
+    </div>
+  </div>
+  <!--
+    #Awards popup
+  -->
+  <div class="pop-up-cnt awards-fm" id="awards-fm">
+    <i class="fa-solid fa-circle-xmark"></i>
+    <div class="wtdr-fm-cnt awds-cnt">
+      <h2> Latest awards</h2>
+      <div class="wtd-r-dt">
+        <table>
+          <thead>
+            <tr>
+              <th>Amward</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="td-1">
+              <td class="aw-n">Top Earner of the month</td>
+              <td class="pnt">100 </td>
+            </tr>
+            <tr>
+              <td class="aw-n">Monthly Site Engagement</td>
+              <td class="pnt">100 </td>
+            </tr>
+            <tr class="td-1">
+              <td class="aw-n">Monthly Referal</td>
+              <td class="pnt">1000 </td>
+            </tr>
+            <tr>
+              <td class="aw-n">Continual Upgrade</td>
+              <td class="pnt">100 </td>
+            </tr>
+            <tr class="td-1">
+              <td class="aw-n">Frequent Investment</td>
+              <td class="pnt">100 </td>
+            </tr>
+            <tr>
+              <td class="t-tl">Total Points</td>
+              <td class="t-tl-a">1600</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--
+    #End of POP Ups
+  -->
   <div class="account-cont">
     <div class="crnt-blnc">
       <img src="./images/favicon.svg" alt="">
@@ -104,8 +222,8 @@
       <p>Ksh. 0.00</p>
     </div>
     <ul class="c-w-d">
-      <li class="cwd-lnks pn-dfrm"><a href="#"><i class="fa-solid fa-money-bill"></i> <p>Deposit</p></a></li>
-      <li class="cwd-lnks"><a href="#"><i class="fa-solid fa-money-bill-transfer"></i> <p>Transfer</p></a></li>
+      <li class="cwd-lnks opn-depo"><a href="#"><i class="fa-solid fa-money-bill"></i> <p>Deposit</p></a></li>
+      <li class="cwd-lnks opn-wdrwl"><a href="#"><i class="fa-solid fa-money-bill-transfer"></i> <p>Transfer</p></a></li>
       <li class="cwd-lnks"><a href="#"><i class="fa-solid fa-credit-card"></i> <p>Withdraw</p></a></li>
       <li class="cwd-lnks"><a href="#"><i class="fa-solid fa-money-check-dollar"></i> <p>Upgrade</p></a></li>
       <li class="cwd-lnks"><a href="#"><i class="fa-solid fa-award"></i> <p>Rewards</p></a></li>

@@ -1432,10 +1432,11 @@ footer{
   z-index: 1;
   background: rgba(3, 3, 3, 0.9);
 }
+/* Deposit popup */
 .inv-fm{
   display: none;
 }
-.inv-fm.active{
+.active-p{
   display: block;
 }
 .pop-up-cnt .dpst-cnt{
@@ -1454,14 +1455,15 @@ footer{
 }
 .dpst-cnt form{
   width: 100%;
-  background: #f7f7f7;
+  background-color: rgba(252, 252, 252, 0.5);
+  box-shadow: 10px 10px 10px rgb(68, 68, 68);
   padding: 5px;
   border-radius: 5px;
 }
 .dpst-cnt form h4{
   width: fit-content;
   margin: 10px auto;
-  color: #313131;
+  color: #ffffff;
 }
 .dpst-cnt form .ptnts{
   width: 95%;
@@ -1482,7 +1484,7 @@ footer{
 }
 .dpst-cnt form .amnt{
   width: 90%;
-  color: #313131;
+  color: #ffffff;
   font-weight: 900;
   margin: auto;
 }
@@ -1496,7 +1498,7 @@ footer{
   color: rgb(0, 0, 0);
   font-weight: 900;
   padding: 2px 5px;
-  background-color: rgba(138, 138, 138, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .btn-dp{
   width: 100%;
@@ -1511,4 +1513,174 @@ footer{
   border-radius: 5px;
   font-weight: 900;
   color: white;
+}
+
+/* Withdrawal popup */
+.pop-up-cnt .wtdr-fm-cnt{
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wdthrw-fm{
+  display: none;
+}
+.wdthrw-fm.active-w{
+  display: block;
+}
+.wtdr-fm-cnt form{
+  width: 100%;
+  background-color: rgba(252, 252, 252, 0.5);
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgb(68, 68, 68);
+}
+.wtdr-fm-cnt form h2{
+  width: fit-content;
+  font-size: 18px;
+  margin: 10px auto;
+  color: white;
+}
+.wtdr-fm-cnt form .wtd-r-dt{
+  width: 95%;
+  margin: auto;
+}
+.wtd-r-dt h4{
+  width: 100%;
+  margin: 20px auto;
+  font-size: 14px;
+}
+.wtd-r-dt h4 span{
+  margin-left: 10px;
+  font-size: 16px;
+  padding-bottom: 2px;
+}
+span.ti{
+  color: #4f0594;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-bottom: 2px solid rgb(255, 0, 0);
+}
+span.te{
+  color: #940541;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-bottom: 2px solid rgb(69, 243, 0);
+}
+.wtd-r-dt input{
+  width: 80%;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.wtdr-fm-cnt form button{
+  width: 40%;
+  padding: 5px;
+  margin: 10px auto;
+  background-color: #0384ee;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 900;
+}
+
+/* transfer popup */
+.transfer-fm{
+  display: none;
+}
+.wtd-r-dt .h4-trnsf{
+  font-size: 16px;
+  margin: 15px auto;
+}
+.h4-trnsf span{
+  color: #ec3406;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+.trns-cnt form h2{
+  padding: 5px;
+  border-bottom: 1px solid #922004;
+}
+.trns-cnt form p{
+  width: 90%;
+  text-align: center;
+  font-size: 11px;
+  color: #2e2e2e;
+  margin: auto;
+}
+
+/* Upgrade popup */
+.upgrade-fm{
+  display: none;
+}
+.upgrd p{
+  width: 90%;
+  font-size: 12px;
+  text-align: center;
+  margin: auto;
+  line-height: 20px;
+}
+.upgrd p span{
+  padding: 2px 5px;
+  border-radius: 2px;
+  font-weight: 900;
+  color: white;
+}
+
+/* Awards popup */
+.awards-fm{
+  display: none;
+}
+.awds-cnt{
+  background-color: rgba(252, 252, 252, 0.5);
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgb(68, 68, 68);
+}
+.awds-cnt h2{
+  width: fit-content;
+  font-size: 18px;
+  margin: auto;
+}
+.awds-cnt table{
+  width: 90%;
+  margin: 20px auto;
+}
+.awds-cnt table thead tr th{
+  text-align: left;
+  font-size: 16px;
+  color: #ad3d09;
+}
+.awds-cnt table tbody tr td{
+  padding: 5px;
+  border: none;
+}
+.awds-cnt table tbody .td-1{
+  background-color: rgba(172, 172, 172, 0.3);
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.awds-cnt table tbody tr .aw-n{
+  width: 75%;
+  font-size: 12px;
+}
+.awds-cnt table tbody tr .pnt{
+  font-weight: 900;
+  color: #4f0594;
+}
+.awds-cnt table tbody tr .t-tl{
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.awds-cnt table tbody tr .t-tl-a{
+  font-weight: 900;
+  color: #000000;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #f15b15;
+  border-bottom-style: double;
 }
