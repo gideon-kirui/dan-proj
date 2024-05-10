@@ -17,34 +17,7 @@
       <img src="./images/favicon.svg" alt="dans-crypto home">
       <h4>Dan-Vesta</h4>
     </a>
-    <nav class="navbar" id="navbar">
-      <div class="navbar-top">
-        <a href="index.html" class="logo">
-          <img src="./images/favicon.svg" alt="logo">
-          <p>Dan-Vesta</p>
-        </a>
-      </div>
-      <ul class="navbar-list">
-        <li class="lnk-cont">
-          <a href="index.html" class="navbar-link">Home</a>
-        </li>
-        <li class="lnk-cont">
-          <a href="#aboutus" class="navbar-link">About</a>
-        </li>
-        <li class="lnk-cont"> 
-          <a href="#getstarted" class="navbar-link">Getting Started</a>
-        </li>
-        <li class="lnk-cont">
-          <a href="#invset-pk" class="navbar-link">Packages</a>
-        </li>
-        <li class="lnk-cont">
-          <a href="#stats" class="navbar-link">Updates</a>
-        </li>
-        <li class="lnk-cont">
-          <a href="#" class="navbar-link">Help</a>
-        </li>
-      </ul>
-    </nav>
+    <div></div>
     <div class="nav-rght-lnk">
       <!-- <div class="btn-group">
         <a href="login_signup.html" class=" ghost-btn">Sign In</a>
@@ -58,22 +31,129 @@
           <li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
         </ul>
       </button>
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-        <i class="fa-solid fa-times"></i>
-      </button>
     </div>
   </div>
 
   <!--
     #Popus
   -->
+  <!--- Chat options -->
+  <div class="chat-options">
+    <div class="cls-btn-h"><i class="fa-solid fa-times"></i></div>
+    <a href="" class="chat op1">
+      <i class="fa-brands fa-square-whatsapp"></i>
+      <p>Whatsapp Us</p>
+    </a>
+    <a href="" class="chat op2">
+      <i class="fa-solid fa-phone-volume"></i>
+      <p>Call Us</p>
+    </a>
+    <a href="" class="chat op3">
+      <i class="fa-solid fa-download"></i>
+      <p>User guide</p>
+    </a>
+  </div>
+  <!--Frequently asked question-->
+  <div class="faqs-cont">
+    <div class="fqas-close-btn">
+      <i class="fa-solid fa-times"></i>
+    </div>
+    <h2>Bellow are some commonly asked questions</h2>
+    <ul class="answres-list">
+      <li>
+        <h4 class="faq-question">What is Dan Vesto</h4>
+        <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid ab eum, suscipit provident eligendi architecto unde soluta. Quae culpa rem voluptates magni totam accusantium nihil dolorum esse cum officia!</p>
+      </li>
+      <li>
+        <h4 class="faq-question">How can I get started with Dan Vesto</h4>
+        <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid ab eum, suscipit provident eligendi architecto unde soluta. Quae culpa rem voluptates magni totam accusantium nihil dolorum esse cum officia!</p>
+      </li>
+      <li>
+        <h4 class="faq-question">How to I earn in Dan Vesto</h4>
+        <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid ab eum, suscipit provident eligendi architecto unde soluta. Quae culpa rem voluptates magni totam accusantium nihil dolorum esse cum officia!</p>
+      </li>
+      <li>
+        <h4 class="faq-question">Can I invite a friend to Dan vesto</h4>
+        <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid ab eum, suscipit provident eligendi architecto unde soluta. Quae culpa rem voluptates magni totam accusantium nihil dolorum esse cum officia!</p>
+      </li>
+    </ul>
+  </div>
+
+  <!--
+    #Deposit from popup
+  -->
+  <div class="pop-up-cnt inv-f" id="inv-f">
+    <i class="fa-solid fa-circle-xmark" onclick="closeDepo()"></i>
+    <div class="dpst-cnt">
+      <form action="" method="post">
+        <h4>Make Your investment</h4>
+        <div class="ptnts">
+          <select name="" id="">
+            <option value="">Choose Payment Method</option>
+            <option value="">M-Pesa</option>
+            <option value="">USD</option>
+          </select>
+        </div>
+        <div class="amnt">
+          <label for="">Enter Amount</label>
+          <input type="number">
+        </div>
+        <div class="btn-dp"><input type="submit" value="Deposite"></div>
+      </form>
+    </div>
+  </div>
+  <!--
+    #Help desk popup
+  -->
+  <div class="hlp-dsk-cont" id="hlp-dsk-cont">
+    <i class="fa-solid fa-times cls-btn-c"></i>
+    <div class="hlp-cht">
+      <h4>Get assistance on any challage</h4>
+      <div class="cht-cont">
+        <div class="h-cht stm-ch-bt">
+          <div class="mg-pr">
+            <img src="./images/favicon.svg" alt="">
+          </div>
+          <p>Hello, Welcome to our help desk, we would love to offer assistance, How can we help today!</p>
+        </div>
+        <div class="h-cht cstm-rsp">
+          <p>I was trying to create an account but it's not going through with an error that refferal 
+            is requred. how can I go about it.
+          </p>
+          <div class="mg-pr">
+            <img src="./images/ban4.jpeg" alt="">
+          </div>
+        </div>
+        <div class="h-cht cstm-rsp">
+          <p>I was trying to create an account but it's not going through with an error that refferal 
+            is requred. how can I go about it.
+          </p>
+          <div class="mg-pr">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <div class="h-cht stm-ch-bt">
+          <div class="mg-pr">
+            <img src="./images/ban4.jpeg" alt="">
+          </div>
+          <p>Hello, Welcome to our help desk, we would love to offer assistance, How can we help today!</p>
+        </div>
+      </div>
+      <form class="txt-inpt" action="" method="post">
+        <input type="text" name="" id="" placeholder="Type here ...">
+        <button type="submit"><i class="fa-solid fa-check"></i></button>
+      </form>
+      
+    </div>
+  </div>
+  <!--
+    #Endofpopups
+  -->
+
   <!--
     #Banner
   -->
-  
+
   <div class="banner" id="Home">
     <div class="text-container">
       <div class="txt-dt">
@@ -81,7 +161,7 @@
         <p id="bannerText" class="slide-in">Are you ready for a great change!!! Online investment is now the talk of town, Invest on Dan's crypto today and experience a change that will shed smiles on you and your generations to come</p>  
       </div>
       <div class="buttons">
-          <button id="getStartedBtn"><a href="login_signup.html">Get Started</a></button>
+          <button id="getStartedBtn"><a href="login.html">Get Started</a></button>
           <button id="discoverBtn"><a href="#aboutus">Discover</a></button>
       </div>
     </div>
@@ -190,55 +270,86 @@
     <div class="packgs-c">
       <div class="packg bronze">
         <div class="packg-tb">
-          <h2 class="packg-ttl bronz-t">Bronze</h2>
+          <h2 class="packg-ttl bronz-t">StartUp</h2>
           <p class="time"><span>20%</span> After 24Hrs</p>
-          <h4 class="h4b"><span class="inv-from">From</span>Ksh.500 - Ksh.10,000 <span class="inv-to">To</span></h4>
+          <h4 class="h4b"><span class="inv-from">From</span> <i class="fa-solid fa-dollar-sign"></i> 50 - <i class="fa-solid fa-dollar-sign"></i> 549. <span class="inv-to">To</span></h4>
           <div class="features">
             <ul>
-              <li><i class="fa-solid fa-square-check bronze-1"></i><p>Secure</p></li>
-              <li><i class="fa-solid fa-square-check bronze-1"></i><p>Regulated</p></li>
-              <li><i class="fa-solid fa-square-check bronze-1"></i><p>24/7 Support</p></li>
+              <li><i class="fa-solid fa-square-check bronze-1"></i><p>Stock trade</p></li>
+              <li><i class="fa-solid fa-square-check bronze-1"></i><p>safe and secure</p></li>
               <li><i class="fa-solid fa-square-check bronze-1"></i><p>Instant Withdrawal</p></li>
             </ul>
           </div>
-          <div class="inv-btn">
-            <a href="#">Invest Now</a>
+          <div class="inv-btn" onclick="openDepo()">
+            <a >Invest Now</a>
           </div>
         </div>
       </div>
       <div class="packg silver">
         <div class="packg-tb">
-          <h2 class="packg-ttl silver-t">Silver</h2>
-          <p class="time"><span>30%</span> After 24Hrs</p>
-          <h4 class="h4s"><span class="inv-from">From</span>Ksh.10,001 - Ksh.100,000<span class="inv-to">To</span></h4>
+          <h2 class="packg-ttl silver-t">Medium</h2>
+          <p class="time"><span>38%</span> After 48Hrs</p>
+          <h4 class="h4s"><span class="inv-from">From</span><i class="fa-solid fa-dollar-sign"></i> 550 - <i class="fa-solid fa-dollar-sign"></i> 1050 <span class="inv-to">To</span></h4>
           <div class="features">
             <ul>
-              <li><i class="fa-solid fa-square-check silver-1"></i><p>Secure</p></li>
-              <li><i class="fa-solid fa-square-check silver-1"></i><p>Regulated</p></li>
-              <li><i class="fa-solid fa-square-check silver-1"></i><p>24/7 Support</p></li>
+              <li><i class="fa-solid fa-square-check silver-1"></i><p>Stock trade</p></li>
+              <li><i class="fa-solid fa-square-check silver-1"></i><p>safe and secure</p></li>
               <li><i class="fa-solid fa-square-check silver-1"></i><p>Instant Withdrawal</p></li>
             </ul>
           </div>
-          <div class="inv-btn">
-            <a href="#">Invest Now</a>
+          <div class="inv-btn" onclick="openDepo()">
+            <a >Invest Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="packg diamond">
+        <div class="packg-tb">
+          <h2 class="packg-ttl diamond-t">Pro</h2>
+          <p class="time"><span>82%</span> After 96Hrs</p>
+          <h4 class="h4d"><span class="inv-from">From</span> <i class="fa-solid fa-dollar-sign"></i> 1100 - <i class="fa-solid fa-dollar-sign"></i> 2499. <span class="inv-to">To</span></h4>
+          <div class="features">
+            <ul>
+              <li><i class="fa-solid fa-square-check diamond-1"></i><p>Stock trade</p></li>
+              <li><i class="fa-solid fa-square-check diamond-1"></i><p>safe and secure</p></li>
+              <li><i class="fa-solid fa-square-check diamond-1"></i><p>Instant Withdrawal</p></li>
+            </ul>
+          </div>
+          <div class="inv-btn" onclick="openDepo()">
+            <a >Invest Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="packg platinum">
+        <div class="packg-tb">
+          <h2 class="packg-ttl platinum-t">Bitcoin Mining</h2>
+          <p class="time"><span>150%</span> After 72Hrs</p>
+          <h4 class="h4p"><span class="inv-from">From</span><i class="fa-solid fa-dollar-sign"></i> 2500 - <i class="fa-solid fa-dollar-sign"></i> 5999 <span class="inv-to">To</span></h4>
+          <div class="features">
+            <ul>
+              <li><i class="fa-solid fa-square-check platinum-1"></i><p>Mining</p></li>
+              <li><i class="fa-solid fa-square-check platinum-1"></i><p>safe and secure</p></li>
+              <li><i class="fa-solid fa-square-check platinum-1"></i><p>Instant Withdrawal</p></li>
+            </ul>
+          </div>
+          <div class="inv-btn" onclick="openDepo()">
+            <a >Invest Now</a>
           </div>
         </div>
       </div>
       <div class="packg gold">
         <div class="packg-tb">
-          <h2 class="packg-ttl gold-t">Gold</h2>
-          <p class="time"><span>50%</span> After 24Hrs</p>
-          <h4 class="h4g"><span class="inv-from">From</span>Ksh.1100,001 - Ksh.10,000,000<span class="inv-to">To</span></h4>
+          <h2 class="packg-ttl gold-t">Advanced Forex</h2>
+          <p class="time"><span>250%</span> After 48Hrs</p>
+          <h4 class="h4g"><span class="inv-from">From</span><i class="fa-solid fa-dollar-sign"></i> 6000 - <i class="fa-solid fa-dollar-sign"></i> Unlimited<span class="inv-to">To</span></h4>
           <div class="features">
             <ul>
-              <li><i class="fa-solid fa-square-check gold-1"></i><p>Secure</p></li>
-              <li><i class="fa-solid fa-square-check gold-1"></i><p>Regulated</p></li>
-              <li><i class="fa-solid fa-square-check gold-1"></i><p>24/7 Support</p></li>
+              <li><i class="fa-solid fa-square-check gold-1"></i><p>Trade Forex</p></li>
+              <li><i class="fa-solid fa-square-check gold-1"></i><p>safe and secure</p></li>
               <li><i class="fa-solid fa-square-check gold-1"></i><p>Instant Withdrawal</p></li>
             </ul>
           </div>
-          <div class="inv-btn">
-            <a href="#">Invest Now</a>
+          <div class="inv-btn" onclick="openDepo()">
+            <a >Invest Now</a>
           </div>
         </div>
       </div>
@@ -254,15 +365,15 @@
 
   <div class="updt-wtd-inv" id="stats">
     <div class="w-d-tl">Market Trends</div>
+    <h2>Deposits</h2>
     <div class="wdrls-invests-tbl">
       <div class="table-container">
         <table class="market-table">
           <thead class="table-head">
             <tr class="table-row">
               <th class="table-heading">Invester</th>
-              <th class="table-heading">Invested</th>
-              <th class="table-heading">Withdrawn</th>
-              <th class="table-heading">Increment</th>
+              <th class="table-heading">Deposit</th>
+              <th class="table-heading">Package</th>
             </tr>
           </thead>
           <tbody class="table-body">
@@ -276,31 +387,18 @@
 
               <td class="table-data">
                 <div class="wrapper-flex">
-                  <div class="icon bronze-1">
-                    <i class="fa-solid fa-caret-up"></i>
+                  <div class="icon orange">
+                    <i class="fa-solid fa-caret-down"></i>
                   </div>
                   <div class="data">
                     <h5 value="39000">1,000,000</h5>
-                    <p>1 day ago</p>
                   </div>
                 </td>
               </td>
               <td class="table-data">
-                <div class="wrapper-flex">
-                  <div class="icon green">
-                    <i class="fa-solid fa-caret-down"></i>
-                  </div>
-                  <div class="data">
-                    <h5 value="39000">10,000,000</h5>
-                    <p>1 min ago</p>
-                  </div>
-                </div>
+                <h5 class="brnd bronze">StartUp</h5>
               </td>
-              <td class="table-data">
-                <div class="wrapper-flex">
-                  <h5 class="data-i" value="-3.26%">50% Increment</h5>
-                </div>
-              </td>
+              
             </tr>
             <tr class="table-row">
               <td class="table-data wrapper">
@@ -312,31 +410,67 @@
 
               <td class="table-data">
                 <div class="wrapper-flex">
-                  <div class="icon silver-1">
-                    <i class="fa-solid fa-caret-up"></i>
-                  </div>
-                  <div class="data">
-                    <h5 value="39000">1,000,000</h5>
-                    <p>1 day ago</p>
-                  </div>
-                </td>
-              </td>
-              <td class="table-data">
-                <div class="wrapper-flex">
                   <div class="icon blue">
                     <i class="fa-solid fa-caret-down"></i>
                   </div>
                   <div class="data">
-                    <h5 value="39000">10,000,000</h5>
-                    <p>1 min ago</p>
+                    <h5 value="39000">1,000,000</h5>
+                    
                   </div>
-                </div>
+                </td>
               </td>
               <td class="table-data">
-                <div class="wrapper-flex">
-                  <h5 class="data-i" value="-3.26%">70% Increment</h5>
+                <h5 class="brnd silver">Medium</h5>
+              </td>
+              
+            </tr>
+            <tr class="table-row">
+              <td class="table-data wrapper">
+                <div class="ppr diamond"><h4>k</h4></div>
+                <div>
+                  <h3 class="h3 coin-name">user-3</h3>
                 </div>
               </td>
+
+              <td class="table-data">
+                <div class="wrapper-flex">
+                  <div class="icon red">
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+                  <div class="data">
+                    <h5 value="39000">1,000,000</h5>
+                    
+                  </div>
+                </td>
+              </td>
+              <td class="table-data">
+                <h5 class="brnd diamond">Pro</h5>
+              </td>
+              
+            </tr>
+            <tr class="table-row">
+              <td class="table-data wrapper">
+                <div class="ppr platinum"><h4>k</h4></div>
+                <div>
+                  <h3 class="h3 coin-name">user-3</h3>
+                </div>
+              </td>
+
+              <td class="table-data">
+                <div class="wrapper-flex">
+                  <div class="icon violet">
+                    <i class="fa-solid fa-caret-down"></i>
+                  </div>
+                  <div class="data">
+                    <h5 value="39000">1,000,000</h5>
+                    
+                  </div>
+                </td>
+              </td>
+              <td class="table-data">
+                <h5 class="brnd platinum">Bitcoin Mining</h5>
+              </td>
+              
             </tr>
             <tr class="table-row">
               <td class="table-data wrapper">
@@ -348,68 +482,36 @@
 
               <td class="table-data">
                 <div class="wrapper-flex">
-                  <div class="icon gold-1">
-                    <i class="fa-solid fa-caret-up"></i>
+                  <div class="icon green">
+                    <i class="fa-solid fa-caret-down"></i>
                   </div>
                   <div class="data">
                     <h5 value="39000">1,000,000</h5>
-                    <p>1 day ago</p>
+                    
                   </div>
                 </td>
               </td>
               <td class="table-data">
-                <div class="wrapper-flex">
-                  <div class="icon red">
-                    <i class="fa-solid fa-caret-down"></i>
-                  </div>
-                  <div class="data">
-                    <h5 value="39000">10,000,000</h5>
-                    <p>1 min ago</p>
-                  </div>
-                </div>
+                <h5 class="brnd gold">Advanced Forex</h5>
               </td>
-              <td class="table-data">
-                <div class="wrapper-flex">
-                  <h5 class="data-i" value="-3.26%">30% Increment</h5>
-                </div>
-              </td>
+              
             </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <h2>Withdrawals</h2>
+    <div class="wdrls-invests-tbl">
+      <div class="table-container">
+        <table class="market-table">
+          <thead class="table-head">
             <tr class="table-row">
-              <td class="table-data wrapper">
-                <div class="ppr silver"><h4>M</h4></div>
-                <div>
-                  <h3 class="h3 coin-name">user-2</h3>
-                </div>
-              </td>
-
-              <td class="table-data">
-                <div class="wrapper-flex">
-                  <div class="icon silver-1">
-                    <i class="fa-solid fa-caret-up"></i>
-                  </div>
-                  <div class="data">
-                    <h5 value="39000">1,000,000</h5>
-                    <p>1 day ago</p>
-                  </div>
-                </td>
-              </td>
-              <td class="table-data">
-                <div class="wrapper-flex">
-                  <div class="icon blue">
-                    <i class="fa-solid fa-caret-down"></i>
-                  </div>
-                  <div class="data">
-                    <h5 value="39000">10,000,000</h5>
-                    <p>1 min ago</p>
-                  </div>
-                </div>
-              </td>
-              <td class="table-data">
-                <div class="wrapper-flex">
-                  <h5 class="data-i" value="-3.26%">70% Increment</h5>
-                </div>
-              </td>
+              <th class="table-heading">Invester</th>
+              <th class="table-heading">Withdrawals</th>
+              <th class="table-heading">Package</th>
             </tr>
+          </thead>
+          <tbody class="table-body">
             <tr class="table-row">
               <td class="table-data wrapper">
                 <div class="ppr bronze"><h4>G</h4></div>
@@ -420,31 +522,19 @@
 
               <td class="table-data">
                 <div class="wrapper-flex">
-                  <div class="icon bronze-1">
+                  <div class="icon orange">
                     <i class="fa-solid fa-caret-up"></i>
                   </div>
                   <div class="data">
                     <h5 value="39000">1,000,000</h5>
-                    <p>1 day ago</p>
+                   
                   </div>
                 </td>
               </td>
               <td class="table-data">
-                <div class="wrapper-flex">
-                  <div class="icon green">
-                    <i class="fa-solid fa-caret-down"></i>
-                  </div>
-                  <div class="data">
-                    <h5 value="39000">10,000,000</h5>
-                    <p>1 min ago</p>
-                  </div>
-                </div>
+                <h5 class="brnd bronze">StartUp</h5>
               </td>
-              <td class="table-data">
-                <div class="wrapper-flex">
-                  <h5 class="data-i" value="-3.26%">50% Increment</h5>
-                </div>
-              </td>
+              
             </tr>
             <tr class="table-row">
               <td class="table-data wrapper">
@@ -456,31 +546,67 @@
 
               <td class="table-data">
                 <div class="wrapper-flex">
-                  <div class="icon silver-1">
+                  <div class="icon blue">
                     <i class="fa-solid fa-caret-up"></i>
                   </div>
                   <div class="data">
                     <h5 value="39000">1,000,000</h5>
-                    <p>1 day ago</p>
+                    
                   </div>
                 </td>
               </td>
               <td class="table-data">
-                <div class="wrapper-flex">
-                  <div class="icon blue">
-                    <i class="fa-solid fa-caret-down"></i>
-                  </div>
-                  <div class="data">
-                    <h5 value="39000">10,000,000</h5>
-                    <p>1 min ago</p>
-                  </div>
+                <h5 class="brnd silver">Medium</h5>
+              </td>
+              
+            </tr>
+            <tr class="table-row">
+              <td class="table-data wrapper">
+                <div class="ppr diamond"><h4>k</h4></div>
+                <div>
+                  <h3 class="h3 coin-name">user-3</h3>
                 </div>
               </td>
+
               <td class="table-data">
                 <div class="wrapper-flex">
-                  <h5 class="data-i" value="-3.26%">70% Increment</h5>
+                  <div class="icon red">
+                    <i class="fa-solid fa-caret-up"></i>
+                  </div>
+                  <div class="data">
+                    <h5 value="39000">1,000,000</h5>
+                    
+                  </div>
+                </td>
+              </td>
+              <td class="table-data">
+                <h5 class="brnd diamond">Pro</h5>
+              </td>
+              
+            </tr>
+            <tr class="table-row">
+              <td class="table-data wrapper">
+                <div class="ppr platinum"><h4>k</h4></div>
+                <div>
+                  <h3 class="h3 coin-name">user-3</h3>
                 </div>
               </td>
+
+              <td class="table-data">
+                <div class="wrapper-flex">
+                  <div class="icon violet">
+                    <i class="fa-solid fa-caret-up"></i>
+                  </div>
+                  <div class="data">
+                    <h5 value="39000">1,000,000</h5>
+                    
+                  </div>
+                </td>
+              </td>
+              <td class="table-data">
+                <h5 class="brnd platinum">Bitcoin Mining</h5>
+              </td>
+              
             </tr>
             <tr class="table-row">
               <td class="table-data wrapper">
@@ -492,75 +618,28 @@
 
               <td class="table-data">
                 <div class="wrapper-flex">
-                  <div class="icon gold-1">
+                  <div class="icon green">
                     <i class="fa-solid fa-caret-up"></i>
                   </div>
                   <div class="data">
                     <h5 value="39000">1,000,000</h5>
-                    <p>1 day ago</p>
+                    
                   </div>
                 </td>
               </td>
               <td class="table-data">
-                <div class="wrapper-flex">
-                  <div class="icon red">
-                    <i class="fa-solid fa-caret-down"></i>
-                  </div>
-                  <div class="data">
-                    <h5 value="39000">10,000,000</h5>
-                    <p>1 min ago</p>
-                  </div>
-                </div>
+                <h5 class="brnd gold">Advanced Forex</h5>
               </td>
-              <td class="table-data">
-                <div class="wrapper-flex">
-                  <h5 class="data-i" value="-3.26%">30% Increment</h5>
-                </div>
-              </td>
-            </tr>
-            <tr class="table-row">
-              <td class="table-data wrapper">
-                <div class="ppr silver"><h4>M</h4></div>
-                <div>
-                  <h3 class="h3 coin-name">user-2</h3>
-                </div>
-              </td>
-
-              <td class="table-data">
-                <div class="wrapper-flex">
-                  <div class="icon silver-1">
-                    <i class="fa-solid fa-caret-up"></i>
-                  </div>
-                  <div class="data">
-                    <h5 value="39000">1,000,000</h5>
-                    <p>1 day ago</p>
-                  </div>
-                </td>
-              </td>
-              <td class="table-data">
-                <div class="wrapper-flex">
-                  <div class="icon blue">
-                    <i class="fa-solid fa-caret-down"></i>
-                  </div>
-                  <div class="data">
-                    <h5 value="39000">10,000,000</h5>
-                    <p>1 min ago</p>
-                  </div>
-                </div>
-              </td>
-              <td class="table-data">
-                <div class="wrapper-flex">
-                  <h5 class="data-i" value="-3.26%">70% Increment</h5>
-                </div>
-              </td>
+              
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    </div>
   </div>
-  
+  <div class="chat-icon" >
+    <i class="fa-solid fa-comment"></i>
+  </div>
   <div class="testimonials">
     <div class="w-d-tl">Investers' Opinions</div>
     <div class="tst-cnt">
@@ -584,24 +663,16 @@
     </div>
   </div>
   <footer>
-    <div class="fd-bk">
-      <div class="title">Give Us feedback</div>
-      <form action="" method="post">
-        
-        <input type="email" name="" id="" placeholder="email">
-        
-        <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
     <div class="ft-cnt">
-      <a href="#">help</a>
-      <a href="login_signup.html">Get Started</a>
-      <a href="#">FQAs</a>
+      <p class="help-pop">HELP</p>
+      <a href="login.html">Get Started</a>
+      <button class="faqs-open-btn" aria-label="open menu" data-nav-toggler>
+        <p>FAQs</p>
+      </button>
     </div>
     <hr>
     <div class="cprt">
-      <p>Copyright&copy;2024</p>
+      <p>Copyright&copy;2018</p>
     </div>
   </footer>
   <script src="scripts.js"></script>

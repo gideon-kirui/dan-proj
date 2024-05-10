@@ -10,32 +10,55 @@
 </head>
 <body>
     <div class="background"></div>
+    <!--
+    #Popus
+   -->
+   <!-- Help -->
+    <div class="chat-options">
+        <div class="cls-btn-h"><i class="fa-solid fa-times"></i></div>
+        <a href="" class="chat op1">
+        <i class="fa-brands fa-square-whatsapp"></i>
+        <p>Whatsapp Us</p>
+        </a>
+        <a href="" class="chat op2">
+        <i class="fa-solid fa-phone-volume"></i>
+        <p>Call Us</p>
+        </a>
+        <a href="" class="chat op3">
+        <i class="fa-solid fa-download"></i>
+        <p>User guide</p>
+        </a>
+    </div>
+    <!-----frequesntly asked questions-->
+    <div class="faqs-cont">
+        <div class="fqas-close-btn">
+        <i class="fa-solid fa-times"></i>
+        </div>
+        <h2>Bellow are some commonly asked questions</h2>
+        <ul class="answres-list">
+        <li>
+            <h4 class="faq-question">What is Dan Vesto</h4>
+            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid ab eum, suscipit provident eligendi architecto unde soluta. Quae culpa rem voluptates magni totam accusantium nihil dolorum esse cum officia!</p>
+        </li>
+        <li>
+            <h4 class="faq-question">How can I get started with Dan Vesto</h4>
+            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid ab eum, suscipit provident eligendi architecto unde soluta. Quae culpa rem voluptates magni totam accusantium nihil dolorum esse cum officia!</p>
+        </li>
+        <li>
+            <h4 class="faq-question">How to I earn in Dan Vesto</h4>
+            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid ab eum, suscipit provident eligendi architecto unde soluta. Quae culpa rem voluptates magni totam accusantium nihil dolorum esse cum officia!</p>
+        </li>
+        <li>
+            <h4 class="faq-question">Can I invite a friend to Dan vesto</h4>
+            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aliquid ab eum, suscipit provident eligendi architecto unde soluta. Quae culpa rem voluptates magni totam accusantium nihil dolorum esse cum officia!</p>
+        </li>
+        </ul>
+    </div>
+  <!--
+    #Endofpopups
+  -->
     <div class="s-l-container">
-        <!--<div class="logreg-box">-->
-            <div class="form-box login">
-                <form action="" method="post">
-                    <h2>Sign In</h2>
-                    <div class="input-box">
-                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-                        <input type="text" name=""  required>
-                        <label for="">Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                        <input type="password" name="" required>
-                        <label for="">Password</label>
-                    </div>
-                    <div class="remember-forgot">
-                        <label for=""><input type="checkbox" name="" required>  Remember me</label>
-                        <a href="#">Fogort password</a>
-                    </div>
-                    <button type="submit" class="btn">Sign In</button>
-
-                    <div class="login-register">
-                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
-                    </div>
-                </form>
-            </div> 
+        <!--<div class="logreg-box">--> 
             <div class="form-box register">
                 <form action="" method="post">
                     <h2>Sign Up</h2>
@@ -75,23 +98,25 @@
                     <button type="submit" class="btn">Sign Up</button>
 
                     <div class="login-register">
-                        <p>Don't have an account? <a href="#" class="login-link">Sign In</a></p>
+                        <p>Don't have an account? <a href="login.html" class="login-link">Sign In</a></p>
                     </div>
                 </form>
             </div>
         <!--</div>-->
         <div class="s-l-f-cnt">
             <div class="ft-cnt-s-l">
-                <a href="index.html">Home</a>
-                <a href="#">Help</a>
-                <a href="#">FQAs</a>
+                <a class="btn-lnk" href="index.html">Home</a>
+                <p class="help-pop btn-lnk">HELP</p>
+                <button class="faqs-open-btn btn-lnk" aria-label="open menu" data-nav-toggler>
+                    <p>FAQs</p>
+                </button>
             </div>
             <hr>
             <div class="copy-l-s">
-            <p>Copyright&copy;2024</p>
+            <p>Copyright&copy;2018</p>
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

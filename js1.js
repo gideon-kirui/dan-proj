@@ -220,3 +220,14 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 });
+
+
+
+function showWthdrwl() {
+  var div = document.getElementById('wdthrw-fm');
+  div.style.display = "block"; 
+}
+function closeWthdrwl() {
+  var div = document.getElementById('wdthrw-fm');
+  div.style.display = "none"; 
+}

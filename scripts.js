@@ -1,31 +1,13 @@
-// Navbar operations
-var menuIcon = document.querySelector('.nav-open-btn');
-var closeIcon = document.querySelector('.nav-close-btn');
-var navbarLinks = document.getElementById('navbar');
+const clsFaqs = document.querySelector('.fqas-close-btn');
+const opnFaqs = document.querySelector('.faqs-open-btn');
+const faqCont = document.querySelector('.faqs-cont');
 
-// Opening nav menu
-menuIcon.addEventListener('click', function(){
-  navbarLinks.classList.add('active');
-  menuIcon.classList.add('hide');
-  closeIcon.classList.add('open');
+opnFaqs.addEventListener('click', function () {
+	faqCont.classList.add('dspfaqs');
 });
-
-// Closing nav menu
-closeIcon.addEventListener('click', function(){
-  navbarLinks.classList.remove('active');
-  menuIcon.classList.remove('hide');
-  closeIcon.classList.remove('open');
-});
-
-// Closing nav menu when link is clicked 
-var navClink = document.querySelectorAll('.lnk-cont');
-navClink.forEach(function(link) {
-  link.addEventListener('click', function() {
-    navbarLinks.classList.remove('active');
-    menuIcon.classList.remove('hide');
-    closeIcon.classList.remove('open');
-  });
-});
+clsFaqs.addEventListener('click', function () {
+	faqCont.classList.remove('dspfaqs');
+})
 
 // Displaying profile
 var imgOpl = document.querySelector('.profile');
@@ -122,26 +104,52 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(showTestimonial, 5000);
 });
 
-// Displaying depo pop
-var openDepo = document.querySelector('.opn-depo');
-var closeDepo = document.querySelector('.fa-circle-xmark');
-var pnDepp = document.getElementById('inv-fm');
+//Deposite open and close
+function openDepo() {
+  var div = document.getElementById('inv-f');
+  div.style.display = "block"; 
+}
+function closeDepo() {
+  var div = document.getElementById('inv-f');
+  div.style.display = "none"; 
+}
 
-openDepo.addEventListener('click', function(){
-  pnDepp.classList.add('active-p');
-});
-closeDepo.addEventListener('click', function(){
-  pnDepp.classList.remove('active-p');
-});
+//openin chat pop
+const sstmChat = document.querySelector('.hlp-dsk-cont')
+const clsBtnc = document.querySelector('.cls-btn-c')
+const opnIcnc = document.querySelector('.chat-icon')
 
-// // Displaying depo pop
-// var openWdrwl = document.querySelector('.opn-wdrwl');
-// var closeWdrwl = document.querySelector('.fa-circle-xmark');
-// var pnWdrwl = document.getElementById('wdthrw-fm');
+opnIcnc.addEventListener('click', function() {
+  sstmChat.classList.add('shwhlpc')
+})
+clsBtnc.addEventListener('click', function() {
+  sstmChat.classList.remove('shwhlpc')
+})
 
-// openWdrwl.addEventListener('click', function(){
-//   pnWdrwl.classList.add('active-w');
-// });
-// closeWdrwl.addEventListener('click', function(){
-//   pnWdrwl.classList.remove('active-w');
-// });
+// Display Help pops
+const chatIcon = document.querySelector('.help-pop');
+const chatCont = document.querySelector('.chat-options');
+const clsChp = document.querySelector('.cls-btn-h')
+
+chatIcon.addEventListener('click', function () {
+	chatCont.classList.add('show');
+})
+clsChp.addEventListener('click', function () {
+	chatCont.classList.remove('show');
+})
+
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach(question => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      faqQuestions.forEach(q => {
+        if (q !== question) {
+          q.classList.remove('active');
+          q.nextElementSibling.classList.remove('active');
+        }
+      });
+      question.classList.toggle('active');
+      answer.classList.toggle('active');
+    });
+  });
